@@ -7,27 +7,25 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav {
+.ff-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.ff-monda {
   font-family: "Monda", sans-serif;
 }
 
-.navbar-brand {
+.ff-pt-sans {
+  font-family: "PT Sans", sans-serif;
+}
+
+.logo {
   font-family: "Ranchers", cursive;
   font-size: 1.9rem;
 }
@@ -36,14 +34,6 @@ nav {
   font-size: 1.1rem;
 }
 
-i {
-  font-size: 3rem;
-}
-
-.hero {
-  font-family: "PT Sans", sans-serif;
-  color: white;
-}
 .home-hero {
   background: url("./img/hero.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -54,43 +44,19 @@ i {
   background-size: cover;
 }
 
-.hero-body p {
+.ls-2px {
   letter-spacing: 2px;
 }
 
-.gallery {
-  width: 100%;
-  font-family: "Monda", sans-serif;
-}
-
-figure {
-  box-shadow: 2px 2px white;
-}
-figure img {
-  width: 100%;
-}
-
-figure figcaption {
+.ls-01rem {
   letter-spacing: 0.1rem;
 }
 
-.catalog {
-  font-family: "Nunito", sans-serif;
+.gallery-item img {
+  width: 100%;
 }
 
-.cart {
-  font-family: "Nunito", sans-serif;
-}
-
-.about {
-  font-family: "PT Sans", sans-serif;
-}
-.checkout {
-  font-family: "Nunito", sans-serif;
-}
-footer {
-  font-family: "PT Sans", sans-serif;
-}
+/* font awesome icons */
 .fa-facebook-square {
   color: #3b5998;
 }
@@ -121,15 +87,9 @@ footer {
   color: #55acee;
 }
 
-/* media queries for checkout page to deal with border right*/
+/* media queries for checkout page to deal with border right on checkout page*/
 @media only screen and (min-width: 992px) {
   .checkout-form {
     border-right: 1px solid #dee2e6 !important;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .checkout-form {
-    border-right: 0;
   }
 }
